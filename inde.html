@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canal2-tailwind</title>
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcs">
+        @theme {       
+             --font-inter: "Inter";
+             --font-ibm: "IBM Plex Sans Hebrew";
+             --font-open: "Open Sans";
+            
+             
+       }  
+      </style>
+    <style type="text/tailwindcss">
+        @theme {       
+             --color-vert: #79AC78; 
+       }  
+      </style>
+</head>
+
+<body class="  overflow-x-hidden ">
+    <div class="m-4 md:m-8">
+    <header class="flex justify-between ">
+        <img src="./img/img/canal2.svg" alt="">
+        <nav class=" flex gap-32 mt-6 ">
+            <a href=" #" class=" text-xl font-inter hover:text-vert hover:-translate-y-2 hover:border-b-2 hidden md:block">Accueil</a>
+            <a href="#" class=" font-inter text-xl hover:text-vert hover:-translate-y-2 hover:border-b-2 hidden md:block">Actualites</a>
+            <a href="#" class=" text-xl font-inter hover:text-vert hover:-translate-y-2 hover:border-b-2 hidden md:block">Programme</a>
+            <a href="#" class=" text-xl font-inter hover:text-vert hover:-translate-y-2 hover:border-b-2 hidden md:block">Direct</a>
+        </nav>
+        <img src="./img/img/menu 1.svg" alt="" class="block md:hidden  ">
+        <button class="text-xl  text-white font-inter hidden md:block  w-38 h-12 rounded-3xl bg-vert mt-4">Premium</button>
+
+    </header>
+
+    <div class=" flex flex-col   gap-6 mt-8 md:flex-row md:mt-16 w-full
+    ">
+        <div class=" flex justify-center  flex-2">
+           <img src="./img/img/Francis-Ngannou-1.svg" alt="">
+        </div>
+
+        <div class="flex flex-col   md:ml-16 flex-1">
+            <div class="flex ">
+                <div class="w-2 h-8 bg-vert  m-2"> </div>
+                <h1 class="mt-2 text-base font-semibold font-ibm">À LA UNE DU JOUR</h1>
+            </div>
+            <div class="flex flex-col gap-6">
+                <div class="flex gap-4 ">
+                    <img src="./img/img/enfants.svg" class=" flex-1 object-cover md:w-60 md:h-32">
+                    <div class=" flex flex-col flex-1 justify-between">
+                        <h4 class="w-40  text-base font-semibold font-ibm">L’école primaire de melon dans le choc</h4>
+                        <h5 class="w-48 text-sm font-open">Lundi matin, le sous prefet du nyon-ekele est partie en visite dans son
+                            village natale ...</h5>
+                    </div>
+                </div>
+                <hr class="w-full h-0.5 bg-black md:hidden">
+                <div class="flex gap-4">
+                    <img src="./img/img/armee.svg" class="w-32 h-auto flex-1 object-cover">
+                    <div class=" flex flex-col flex-1 justify-between">
+                        <h4 class="w-40 text-base font-semibold font-ibm">Manifestations pour la baisse des prix</h4>
+                        <h5 class="w-48 text-sm font-open">Lundi matin, le sous prefet du nyon-ekele est partie en visite dans son
+                            village natale ...</h5>
+                    </div>
+                </div>
+                <hr class="w-full h-0.5 bg-black md:hidden">
+                <div class="flex gap-4">
+                    <img src="./img/img/ville.svg" class="w-32 h-auto flex-1 object-cover ">
+                    <div class=" flex flex-col flex-1 justify-between">
+                        <h4 class="w-40 text-base font-semibold font-ibm">Bientot un métro dans la capitale </h4>
+                        <h5 class="w-48 text-sm font-open">
+                            Lundi matin, le sous prefet du nyon-ekele est partie en visite dans son
+                            village natale ...</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="flex mt-16 gap-16">
+
+        <section class="flex mt-16 gap-16 md:gap-64 ">
+            <div class="">
+                <img src="./img/img/unesco.svg" alt="" class="w-10/12 h-60 mt-1 object-cover rounded-xl md:h-80 w-80">
+                <div class="">
+                    <div class="text-sm text-vert font-inter">Mardi , 10 Janvier 2025 10:30</div>
+                    <div class="text-xl font-semibold w-64 font-ibm">Lutte contre le travail des enfants , l’UNESCO réagit</div>
+                </div>
+            </div>
+            <div class="flex flex-col -mt-8 md:mt-1">
+                <img src="./img/img/politique.svg" alt="" class="w-11/12 h-64 rounded-xl md:w-full h-80">
+                <div class="">
+                    <div class="text-sm text-vert font-inter">Mardi , 10 Janvier 2025 10:30</div>
+                    <div class="text-xl font-semibold w-64 font-ibm">Lutte contre le travail des enfants , l’UNESCO réagit</div>
+                </div>
+            </div>
+            <div class="">
+                <img src="./img/img/foot.svg" alt="" class="w-11/12 h-64 rounded-xl -mt-8 md:mt-1 md:w-full h-80">
+                <div class="">
+                    <div class="text-sm text-vert font-inter">Mardi , 10 Janvier 2025 10:30</div>
+                    <div class="text-xl font-semibold w-64 font-ibm">Lutte contre le travail des enfants , l’UNESCO réagit</div>
+                </div>
+            </div>
+    </div>
+    <div class="flex flex-col justify-center mt-8 md:m-8">
+        <h1 class="text-lg font-semibold text-center md:text-5xl font-ibm md:mt-16">Suivez l’atualité en direct sur Canal 2 International</h1>
+        <video src="./img/img/video.mp4" controls class="mt-4 md:m-32 rouded-2xl"></video>
+    </div>
+    <div class="flex flex-col  justify-center mt-16">
+        <h1 class="text-lg font-semibold text-center md:text-5xl font-ibm">Suivez l’atualité en direct sur Canal 2 International</h1>
+        <div class="flex flex-col m-4 gap-4 md:flex-row md:mt-16">
+            <img src="./img/img/matin.svg " class="flex-1 mt-4 ">
+            <div class=" flex flex-col gap-4 flex-1 md:justify-between h-80 mt-8 md:ml-8">
+                <h1 class="text-3xl text-vert font-semibold md:text-5xl font-ibm">CANAL MATIN</h1>
+                <h4 class="text-sm md:text-xl w-full font-open">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</h4>
+                <h4 class="text-sm md:text-xl font-open">Du Lundi au vendredi sur Canal 2 international</h4>
+                <div class="flex gap-6 mt-4">
+                    <img src="./img/img/insta.svg" alt="">
+                    <img src="./img/img/facebook.svg" alt="">
+                    <img src="./img/img/twitter.svg" alt="">
+                    <img src="./img/img/linkedin.svg" alt="">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex mt-16 gap-8  md:justify-between">
+        <div class="">
+            <div class=" flex justify-center border-2 border-gray-200  h-48 md:h-80 w-80">
+                <img src="./img/img/nous.svg" alt="">
+            </div>
+            <div class="">
+                <div class="text-sm text-vert font-inter">DU LUNDI AU VENDREDI</div>
+
+                <div class="text-xl font-semibold w-64 font-ibm">NOUS CHEZ VOUS</div>
+
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <img src="./img/img/arene.svg" alt="" class=" h-48  object-cover md:h-80 w-80">
+            <div class="">
+                <div class="text-sm text-vert font-inter">CHAQUE VENDREDI</div>
+                <div class="text-xl font-semibold w-64 md:w-72 font-ibm">L’ARENE par Rodrigue Tongue</div>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <img src="./img/img/presse.svg" alt="" class="w-48 h-48 object-cover md:h-80 w-80">
+            <div class="">
+                <div class=" text-sm text-vert font-inter">DU LUNDI AU VENDREDI</div>
+                <div class="text-xl font-semibold w-64 font-ibm">COMEDIE PRESSE</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col  justify-center mt-16 ">
+
+        <div class="flex flex-col m-4 gap-8  md:flex-row ">
+            <img src="./img/img/comment.svg" class="md:hidden flex-1">
+            <div class=" flex flex-col gap-4 md:gap-8 justify-between h-96 flex-1 md:ml-16 mt-4">
+                <h1 class="text-3xl text-vert font-semibold md:text-5xl font-ibm">C' COMMENT ?</h1>
+                <h4 class="text-sm md:text-2xl w-full font-open">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</h4>
+                <h4 class="text-sm md:text-xl font-open">Du Lundi au vendredi sur Canal 2 international</h4>
+                <div class="flex gap-6 mt-4 md:gap-12">
+                    <img src="./img/img/insta.svg" alt="" class="md:">
+                    <img src="./img/img/facebook.svg" alt="">
+                    <img src="./img/img/twitter.svg" alt="">
+                    <img src="./img/img/linke.svg" alt="">
+
+
+                </div>
+            </div>
+            <img src="./img/img/comment.svg" class="hidden md:block">
+        </div>
+    </div>
+
+    <section class="flex flex-col justify-cente mt-4 md:flex-row md:justify-around">
+        <div class="flex gap-8 md:-rotate-90 w-full md:-mt-72">
+            <div class="w-2 h-12 bg-vert md:rotate-90"></div>
+            <h1 class="text-3xl text-vert font-ibm">ESPACE PUBLICITÉ</h1>
+            <div class="w-2 h-12 bg-vert hidden md:block rotate-90" ></div>
+        </div>
+        <img src="./img/img/publicite.svg" alt="publicite" class=" w-full  object-cover mt-8 md:-ml-96">
+
+    </section>
+
+    <section class="flex  flex-row mt-16 gap-16 md:hidden">
+        <div class="">
+            <img src="./img/img/unesco.svg" alt="" class="w-11/12  h-60 mt-1 object-cover rounded-xl -mt-8 md:mt-1 md:h-80 w-80">
+            <div class="">
+                <div class="text-sm text-vert font-inter">Mardi , 10 Janvier 2025 10:30</div>
+                <div class="text-xl font-semibold w-64 font-ibm">Lutte contre le travail des enfants , l’UNESCO réagit</div>
+            </div>
+        </div>
+        <div class="">
+            <img src="./img/img/politique.svg" alt="" class="w-11/12 h-64 rounded-xl -mt-8 md:mt-1 md:w-full h-80">
+            <div class="">
+                <div class="text-sm text-vert font-inter">Mardi , 10 Janvier 2025 10:30</div>
+                <div class="text-xl font-semibold w-64 font-ibm">Lutte contre le travail des enfants , l’UNESCO réagit</div>
+            </div>
+        </div>
+        <div class="">
+            <img src="./img/img/foot.svg" alt="" class="w-11/12 h-64 rounded-xl -mt-8 md:mt-1 md:w-full h-80">
+            <div class="">
+                <div class="text-sm text-vert font-inter">Mardi , 10 Janvier 2025 10:30</div>
+                <div class="text-xl font-semibold w-64 font-ibm">Lutte contre le travail des enfants , l’UNESCO réagit</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class=" hidden md:flex block  justify-between mt-32 flex-row">
+        <div class="">
+            <img src="./img/img/femme.svg" alt="" class=" object-cover rounded-xl md:h-80 w-80">
+            <div class="">
+                <div class="text-sm text-vert font-inter">Mardi , 10 Janvier 2025 10:30</div>
+                <div class="text-xl font-semibold w-64 font-ibm">Lutte contre le travail des enfants , l’UNESCO réagit</div>
+            </div>
+        </div>
+        <div class="">
+            <img src="./img/img/femme.svg" alt="" class=" rounded-xl md:w-full h-80">
+            <div class="">
+                <div class="text-sm text-vert font-inter">Mardi , 10 Janvier 2025 10:30</div>
+                <div class="text-xl font-semibold w-64 font-ibm">Lutte contre le travail des enfants , l’UNESCO réagit</div>
+            </div>
+        </div>
+        <div class="">
+            <img src="./img/img/femme.svg" alt="" class=" rounded-xl md:w-full h-80">
+            <div class="">
+                <div class="text-sm text-vert font-inter">Mardi , 10 Janvier 2025 10:30</div>
+                <div class="text-xl font-semibold w-64 font-ibm">Lutte contre le travail des enfants , l’UNESCO réagit</div>
+            </div>
+        </div>
+    </section>
+</div>
+    <footer class="flex justify-center items-center bg-vert  h-64  mt-8 -ml-4 md:h-96 ">
+        <div class="flex-col">
+            <img src="./img/img/canal2.svg" alt="logo" class="w-32 h-32">
+            <div class=" flex flex-row gap-2">
+                <img src="./img/img/instagram.svg" alt="logo" class="w-6 h-6 object-cover">
+                <img src="./img/img/facebook.svg" alt="logo" class="w-6 h-6 object-cover">
+                <img src="./img/img/twitter.svg" alt="logo" class="w-6 h-6 object-cover">
+                <img src="./img/img/linke.svg" alt="logo" class="w-6 h-6 object-cover">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
